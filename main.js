@@ -19,6 +19,8 @@ imgs.forEach(img => {
 
 cardBoard.innerHTML = cardHTML + cardHTML;
 
+
+
 /** Fim da Renderização HTML */
 
 const cards = document.querySelectorAll(".memory-card");
@@ -65,3 +67,12 @@ function resetCards(isMatch = false) {
 }
 
 cards.forEach(card => card.addEventListener("click", flipCard));
+
+(function shuffle() {
+    cards.forEach(card => {
+      let ramdomPos = Math.floor(Math.random() * 12);
+      card.style.order = ramdomPos;
+    });
+  })()
+  
+  cards.forEach(card => card.addEventListener('click', flipCard));
