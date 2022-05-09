@@ -14,7 +14,6 @@
   #cardboard {
     width: 840px;
     height: 840px;
-    margin: 100px;
     display: flex;
     flex-wrap: wrap;
     border-right: 10px solid rgb(23, 110, 11);
