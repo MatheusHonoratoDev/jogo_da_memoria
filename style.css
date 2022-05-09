@@ -14,9 +14,12 @@
   #cardboard {
     width: 840px;
     height: 840px;
-    margin: auto;
+    margin: 100px;
     display: flex;
     flex-wrap: wrap;
+    border-right: 10px solid rgb(23, 110, 11);
+
+  
   }
   
   .memory-card {
@@ -26,6 +29,7 @@
     transform-style: preserve-3d;
     transition: 0.3s;
     position: relative;
+    
   }
   
   .memory-card:active {
@@ -36,6 +40,10 @@
     transform: rotateY(180deg);
   }
   
+  .memory-card.flip .back-face {
+  display: none;
+  }
+
   .front-face,
   .back-face {
     width: 100%;
@@ -54,26 +62,25 @@
     border: 10px solid ;
     border-radius: 5px;
     background-color: #ffffff;
-    margin: 100px;
+    margin: 0px;
     padding-left: 13px;
     color: rgb(23, 110, 11);
     font-family: fantasy;
     width: 550px;
+    margin-top: 60px;
   }
 
   div img.gif {
     
-    margin-left: 118px;
+    margin-top: 50px ;
     padding: 0px;
     border: 10px solid rgb(23, 110, 11);
   }
 
-  .memoria {
-      border-left: 10px solid rgb(23, 110, 11);
-  }
+
 
   .banana{
 
-    margin-left: 80px;
+    margin-left: 0px;
     margin-top: 30px;
   }
